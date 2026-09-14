@@ -1,0 +1,9 @@
+Practice/
+Practice-V5.0/
+_confirm/
+__pycache__/
+*.tmp
+*.bak
+~$*
+Thumbs.db
+.DS_Store
