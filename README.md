@@ -8,6 +8,18 @@ Complaints were submitted to the VA Office of Inspector General and the FBI on 1
 
 ---
 
+## Publication log
+
+| Batch | Published | What went up |
+|---|---|---|
+| **1** | **16 September 2026** | The three source exports · both Optum letters to Senator Moody · the compiled exhibit · the claim index · the scripts · SHA-256 checksums for every file |
+
+Each batch is a dated row here and a timestamped commit in this repository's public history. **Nothing is ever removed.** Later batches add; where later material corrects something earlier, the correction is added beside it and dated.
+
+Every file is checksummed and the commit history is public, so any change to what is published here — **including by me** — is visible to anyone who checks.
+
+---
+
 ## What this is about, and what it is not
 
 **This concerns UnitedHealth Group and Optum, the contractor administering VA Community Care Network Region 3, and the records it produced.** That is the whole subject.
@@ -30,7 +42,7 @@ Further material is under review: additional captures of this same account taken
 
 That standard is stated so it can be checked: every figure in this repository has been read against the page it came from, not inferred from a text search, and the scripts that reproduce the counts are included. Two earlier findings of mine failed that check and were withdrawn; both withdrawals are recorded below rather than deleted.
 
-Material will be added as it clears the same check. **Nothing already published will be removed.** Where later material corrects something here, the correction will be added alongside it and dated.
+Material will be added as it clears the same check. **Nothing already published will be removed.** Where later material corrects something here, the correction will be added alongside it and dated. Each addition appears in the publication log above and as a timestamped commit.
 
 ---
 
