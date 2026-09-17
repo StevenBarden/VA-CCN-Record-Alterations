@@ -113,11 +113,28 @@ Between the two complete exports, medical claims fall from 122 to 115. Dental cl
 
 **Repeated submissions of one date of service.** InPhyNet Contracting, $2,337.00, date of service 6 June 2021, submitted four separate times — 4 August 2021, 7 October 2021, 29 November 2021 and 16 February 2022. **All four are marked Denied. None was paid.** The record does not show what the provider was told after any of the four.
 
-**Two identical denture claims — and the portal and the Explanation of Benefits do not agree.** Ackley, Andrea. Same date of service 17 June 2024, same $4,775.00, same procedure codes, same line-item amounts, submitted 18 June 2024 and 9 August 2024 — fifty-two days apart. Both appear in the export filtered to paid claims, and both display a "Paid" status in the portal.
+**The portal returned a claim to a "Paid" query. Optum's Explanation of Benefits for that same claim says Denied, $0.00.**
 
-The Explanation of Benefits issued by Optum for the first of them, claim number 24170W411824320000, states both line items as **Denied, amount paid $0.00**.
+Nothing in this one has to be taken on my word, because the file is in this repository.
 
-Two Optum documents, one claim number, opposite statuses. I do not know which is correct, and I am not asserting that either is. The Explanations of Benefit for these claims are being assembled and will be published when they are complete.
+Open `Reference 03 - Optum OCR 20251214.pdf`. **Page 1 is the filter panel as it stood when the page was captured** — Type: Dental checked, Medical and Pharmacy unchecked; under Dental: **Paid checked**, Denied and Processing unchecked; Time Period: All. The page reports **18 Results, displaying 18 of 18**.
+
+**Page 2 lists, among those eighteen:**
+
+| Claim | Region | Date of service | Submitted | Billed | Provider | Codes |
+|---|---|---|---|---|---|---|
+| `24170W411824320000` | 3 | 17 June 2024 | 18 June 2024 | $4,775.00 | Ackley, Andrea | D5120 $2,398.00 · D5110 $2,377.00 |
+| `24222W432197920000` | 3 | 17 June 2024 | 9 August 2024 | $4,775.00 | Ackley, Andrea | D5120 $2,398.00 · D5110 $2,377.00 |
+
+Same date of service, same amount, same two codes, same two line-item amounts, submitted fifty-two days apart. Both carry a green "Paid" badge. Both were returned by a filter set to **paid dental claims only**.
+
+**The Explanation of Benefits obtained from that same portal, in that same session, for claim `24170W411824320000`, states both line items Denied, amount paid $0.00, amount owed $0.00.**
+
+That is not a disagreement about *how much* was paid. It is a disagreement about *whether* the claim was paid at all — one company, one claim number, two documents, opposite statuses, and no interval between them.
+
+I do not know which is correct and I am not asserting that either is. What I am asking is which one VA's claims data agrees with.
+
+The Explanation of Benefits is not in this repository yet. It carries my home address and a VA Master Veteran Index identifier on its face, and nothing published here is altered, so it will go up as a visibly redacted copy published alongside the checksum of the unaltered original. It is quoted above word for word and the full document is available on request. The Explanations of Benefit for the remaining claims are being assembled.
 
 ---
 
@@ -157,6 +174,10 @@ Only the Green claim is observed to disappear and return. The third export is fi
 
 All amounts shown in the portal are **as billed**. Amounts actually paid are established by the Explanation of Benefits and will differ, often substantially. A "Paid" status in the portal is not a statement of the amount paid.
 
+That caveat does not reach the denture claim above, and the difference is the point. Nothing there turns on an amount. A status filter is the system classifying its own records — eighteen claims were selected by Optum as satisfying *dental* and *paid*, and that claim was one of them. The Explanation of Benefits reports the same field with the opposite value. Status against status, not status against amount.
+
+A claim can also finalise while individual lines deny. That is not what happened here. **Both** lines denied, $0.00 each. There is no payment on that claim at any level.
+
 The figure of $1,544.00 does not appear in any source document. It is four printed line items at $386.00 each.
 
 Matching claim identifiers across exports by text comparison is not reliable — optical character recognition alone produces dozens of false differences, and it produced two false findings of mine before it was caught. Every comparison stated above was confirmed by reading the rendered page.
@@ -176,6 +197,10 @@ I previously stated that twenty-five claims present in the first complete export
 I previously described repeated submissions by one provider without noting that all four were denied. They were. That is stated above.
 
 I previously stated that two identical denture claims were both paid, and gave a combined figure of $9,550.00. That was based on the portal's status display. The Explanation of Benefits for one of those claims states it was denied and that $0.00 was paid. I have removed the combined figure and stated the disagreement instead.
+
+On 16 September 2026 I edited this README after the checksums had already been generated and published. The result was that `SHA256SUMS.txt` and `README.md.sha256` listed the hash of an earlier version of this file. For roughly a day, anyone who ran the verification step described above would have got a failure on `README.md` — not because anything had been tampered with, but because I had changed the file and not regenerated the checksums. Both were regenerated on 17 September 2026 and now match. Every other file in this repository verified correctly throughout.
+
+I am recording this rather than fixing it quietly, because a verification step that is only reported when it passes is worth nothing.
 
 Where anything I have said earlier conflicts with what is here, what is here is current.
 
