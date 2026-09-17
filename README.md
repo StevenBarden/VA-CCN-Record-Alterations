@@ -113,7 +113,11 @@ Between the two complete exports, medical claims fall from 122 to 115. Dental cl
 
 **Repeated submissions of one date of service.** InPhyNet Contracting, $2,337.00, date of service 6 June 2021, submitted four separate times — 4 August 2021, 7 October 2021, 29 November 2021 and 16 February 2022. **All four are marked Denied. None was paid.** The record does not show what the provider was told after any of the four.
 
-**Two identical denture claims, both paid.** Ackley, Andrea. Same date of service 17 June 2024, same $4,775.00, same procedure codes, same line-item amounts, submitted 18 June 2024 and 9 August 2024 — fifty-two days apart. Both appear in the paid-filtered export. $9,550.00 for one set of dentures.
+**Two identical denture claims — and the portal and the Explanation of Benefits do not agree.** Ackley, Andrea. Same date of service 17 June 2024, same $4,775.00, same procedure codes, same line-item amounts, submitted 18 June 2024 and 9 August 2024 — fifty-two days apart. Both appear in the export filtered to paid claims, and both display a "Paid" status in the portal.
+
+The Explanation of Benefits issued by Optum for the first of them, claim number 24170W411824320000, states both line items as **Denied, amount paid $0.00**.
+
+Two Optum documents, one claim number, opposite statuses. I do not know which is correct, and I am not asserting that either is. The Explanations of Benefit for these claims are being assembled and will be published when they are complete.
 
 ---
 
@@ -137,6 +141,7 @@ On Windows: `Get-FileHash -Algorithm SHA256 "<filename>"`. On macOS or Linux: `s
 | 36C79119D0006 | The current Region 3 CCN contract |
 | 36C10G26R0004 | The successor dental solicitation, VA Strategic Acquisition Center |
 | SEOC | Standardized Episode of Care — the set of codes a referral authorizes |
+| EOB | Explanation of Benefits — the statement showing what was billed, what was paid, and the status of each line |
 | Alveoloplasty | Reshaping the jawbone after teeth are removed, so a denture can seat |
 | D7310 | The code used when that bone work is done **during** the extraction surgery |
 | D7320 | The code used when it is done **on its own**, separately |
@@ -150,7 +155,7 @@ On Windows: `Get-FileHash -Algorithm SHA256 "<filename>"`. On macOS or Linux: `s
 
 Only the Green claim is observed to disappear and return. The third export is filtered to dental claims, so no medical claim has a third observation. The hospital claims above are established as present in the first export and absent from the second. Nothing further is asserted about them.
 
-All amounts are as billed. Amounts actually paid will differ and are established by the Explanations of Benefit, which are not included here.
+All amounts shown in the portal are **as billed**. Amounts actually paid are established by the Explanation of Benefits and will differ, often substantially. A "Paid" status in the portal is not a statement of the amount paid.
 
 The figure of $1,544.00 does not appear in any source document. It is four printed line items at $386.00 each.
 
@@ -169,6 +174,8 @@ In a complaint filed 15 December 2025 I stated that the corrective alveoloplasty
 I previously stated that twenty-five claims present in the first complete export were absent from the second. That figure came from matching identifiers across exports and is not supportable. The defensible statement is the one above: medical claims fall from 122 to 115.
 
 I previously described repeated submissions by one provider without noting that all four were denied. They were. That is stated above.
+
+I previously stated that two identical denture claims were both paid, and gave a combined figure of $9,550.00. That was based on the portal's status display. The Explanation of Benefits for one of those claims states it was denied and that $0.00 was paid. I have removed the combined figure and stated the disagreement instead.
 
 Where anything I have said earlier conflicts with what is here, what is here is current.
 
