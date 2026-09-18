@@ -22,11 +22,11 @@ Below, one section per document: what it is, where it came from, what it shows, 
 
 ## Reference 02 — Optum OCR 20251128.pdf
 
-**What it is.** The same claims history from the same portal account, captured 28 November 2025 — twenty months later. Forty-four pages.
+**What it is.** The same claims history from the same portal account, captured 28 November 2025. Forty-four pages.
 
 **Where it came from.** My own portal account. No filter. The first page states **137 Results**.
 
-**What it shows.** What the same account contained twenty months later. Both this file and Reference 01 state their own totals and neither is filtered, which is what makes them comparable.
+**What it shows.** What the same account contained on that later date. Both this file and Reference 01 state their own totals and neither is filtered, which is what makes them comparable.
 
 Against Reference 01: medical claims fall from 122 to 115; dental claims rise from 13 to 22, which is expected. The $6,568.00 claim is absent. The four D7310 line items are absent. The September 2021 hospital admission is absent — the date 09/06/2021 occurs five times in Reference 01 and zero times here. The D7320 alveoloplasty billed in March 2024 appears here for the first time.
 
@@ -62,7 +62,7 @@ Because this export is filtered to **paid** claims, everything in it was paid.
 
 **What it shows.** Six findings, each traced to a page in a Reference export.
 
-**What it does not show.** It asserts no intent and reaches no conclusion about cause. Two items of its wording are stronger than the record supports and are superseded by the README: its page 2 heading, and its description of the interval as "nearly two years" — the interval is eighteen months. Where this exhibit and the README's Corrections section disagree, the README governs.
+**What it does not show.** It asserts no intent and reaches no conclusion about cause. Two items of its wording are stronger than the record supports and are superseded by the README: its page 2 heading, and its description of the interval between the two alveoloplasty claims as "nearly two years." The two dates are 11 September 2022 and 29 March 2024. Where this exhibit and the README's Corrections section disagree, the README governs.
 
 **How to verify.** Every page citation in this document points at a page in Reference 01, 02 or 03, which are in this repository. Check any of them directly.
 
@@ -122,7 +122,7 @@ Read with the 30 March letter: the person who reports is not a participant, rece
 
 **Where it came from.** Written for this repository.
 
-**What it shows.** `parse_claims.py` reads the three Reference exports and prints the claim counts. `make_checksums.py` prints the SHA-256 of every file it reads. `HOW-TO-RUN.md` is written for someone who has never installed Python.
+**What it shows.** `parse_claims.py` reads the three Reference exports and prints the claim counts. It also reads the result count printed on each export's own first page, compares it to the number of claims it parsed, prints both, and exits with an error if they disagree. On the three exports here it reports 135 and 135, 137 and 137, 18 and 18. `make_checksums.py` prints the SHA-256 of every file it reads. `HOW-TO-RUN.md` is written for someone who has never installed Python.
 
 **What it does not show.** The scripts read the PDF text layer, which can differ from the printed page. Every figure that matters has also been checked against the page image. **Matching claim identifiers across exports by text comparison is not reliable and is not done here** — optical character recognition alone produces dozens of false differences.
 

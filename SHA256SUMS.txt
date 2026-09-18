@@ -1,7 +1,7 @@
 8c1dce542e1d0209c9da1ce78aa7bb82f6159ad5e71f6e7392d7070278285b75  .gitignore
 b1cd97a1c5a4f9e6519006151d0811f5a094be73e2bf7ffa5b8d71ef645f2cfe  Barden - Steven - 033026 Optum VA CCN Government Relations Response.pdf
 84397305cc6dca7406c0ebffe6c2d95b5270f6bcd42d1a55617ae26396b8ed4e  Barden - Steven - 050526 Optum VA CCN Government Relations response.pdf
-840b3f1cf09df7600088f786483776f10f853b1984bd515aa2226f91b522bd94  DOCUMENT-GUIDE.md
+89935c6cc440dba6b1adbca23abd4bb15a4c416931bc7a593b0f561c42145354  DOCUMENT-GUIDE.md
 a1610ebafe36ba5b3d5744f999cebbffedcd8b3adb2d87a2bae2fa71568c7c9f  Optum-Claim-Index-v1.xlsx
 d196ce5325d4558c62b43febc5e928589ebdaa181ebece72276f8cc084d62eda  Optum-Record-Alterations-Evidence-v3.pdf
 b5e6c2e4d666660ce5c8a1d80abcf5a9d39584ec0cb17799d9749c0f5fb19f58  README.md
